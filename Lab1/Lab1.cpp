@@ -1,11 +1,13 @@
-// Lab1.cpp : definisce il punto di ingresso dell'applicazione console.
-//
-
 #include "stdafx.h"
+#include "StringBuffer.h"
+#include <iostream>
 
 
 int main()
 {
-    return 0;
+	StringBuffer s1("Hello");
+	StringBuffer s2("world!");
+
+	system("pause");
 }
 
