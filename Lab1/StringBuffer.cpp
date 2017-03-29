@@ -23,8 +23,8 @@ StringBuffer::StringBuffer(const char *str) {
 	ptr = new char[dim];		//alloco un buffer di dimensione uguale alla stringa passata al costruttore
 	memcpy(ptr, str, dim);
 	used = i; //caratteri effettivamente utilizzati
-	//std::cout << "stringa: " << ptr << std::endl;
-	//std::cout << "caratteri utilizzati: " << i << std::endl;
+	std::cout << "stringa: " << ptr << std::endl;
+	std::cout << "caratteri utilizzati: " << used << std::endl;
 }
 
 /*
@@ -49,6 +49,6 @@ StringBuffer::~StringBuffer() {
 /*
 restituisce il numero di caratteri utilizzati dalla stringa memorizzata nel buffer
 */
-size_t size() {
-
+size_t StringBuffer::size() {
+	return used;
 }

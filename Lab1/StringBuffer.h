@@ -5,8 +5,8 @@ class StringBuffer
 private:
 
 	char *ptr;		//puntatore a caratteri
-	int used;		//caratteri utilizzati
-	int dim = 32;	//dimensione buffer
+	size_t used;		//caratteri utilizzati
+	size_t dim = 32;	//dimensione buffer
 
 public:
 	/*
