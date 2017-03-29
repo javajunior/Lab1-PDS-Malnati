@@ -65,4 +65,5 @@ porta a 0 il numero di caratteri utilizzati
 */
 void StringBuffer::clear() {
 	used = 0;
+	dim = 1; //solo il terminatore
 }
