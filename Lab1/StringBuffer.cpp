@@ -52,3 +52,10 @@ restituisce il numero di caratteri utilizzati dalla stringa memorizzata nel buff
 size_t StringBuffer::size() {
 	return used;
 }
+
+/*
+restituisce la dimensione totale del buffer di caratteri
+*/
+size_t StringBuffer::bufsize() {
+	return dim;
+}
