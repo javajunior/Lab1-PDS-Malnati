@@ -59,3 +59,10 @@ restituisce la dimensione totale del buffer di caratteri
 size_t StringBuffer::bufsize() {
 	return dim;
 }
+
+/*
+porta a 0 il numero di caratteri utilizzati
+*/
+void StringBuffer::clear() {
+	used = 0;
+}
